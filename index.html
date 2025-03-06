@@ -2,59 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Myproject</title>
+  <title>Project1</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="assets/hanshu.js"></script>
   <style>
-    #one {
-      color: crimson;
+    .flex{
+      display: flex ;
     }
   </style>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body style="
-margin:0;
-display:flex;
-flex-direction:column;
-align-items:center;">
-
+<body style="height: 100vh;">
   <app-root></app-root>
-  <div style="
-    display:flex;
-    background-color: cadetblue ;
-    width:100%;
-    height: 240px;
-    align-items: center;
-    justify-content: center;
-">
-    <img src="https://img-baofun.zhhainiao.com/pcwallpaper_ugc_mobile/live/60b87e51bff090e24046ed7805c53058_preview.jpg" alt="oycy" min-width="150px" height="200px">
+  <div style="height: 100vh;margin: auto;justify-content: center;align-items: center;position: relative">
+  <div id="nailong" class="flex" style="justify-content: center;align-items: center;width: 400px;height: 300px;z-index: 1;position: absolute;top:50%;left: 50%;transform: translate(-50%, -50%)">
+    <img src=https://th.bing.com/th/id/R.17035e6effa9e552f868765151479db9?rik=%2frdR4p7G1GcZkw&riu=http%3a%2f%2fi2.hdslb.com%2fbfs%2farchive%2fc23b079279535b76b5b1860d75504f74501a6e2d.jpg&ehk=qgnZKSF0DAmmrpFcCIKWyd4seLUhqn7JdNU7GIXhawU%3d&risl=&pid=ImgRaw&r="0 onclick="showAlert()" style="width: 200px;height:150px;" >
   </div>
-
-  <div style="
-    max-width: 700px;
-    margin:0;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-">
-    <p style="color: aqua ">丁林枫喜欢夏玉</p>
-    <p>丁林枫喜欢郭梓桐</p>
-    <p>丁林枫喜欢陈妮红</p>
-    <p id="one">邹鑫宇喜欢夏玉</p>
-    <p>邹鑫宇喜欢郭梓桐</p>
-    <p>邹鑫宇喜欢陈妮红</p>
-    <p>钟梦韬喜欢夏玉</p>
-    <p>钟梦韬喜欢郭梓桐</p>
-    <p>钟梦韬喜欢陈妮红</p>
+  <div id="custom-alert"  class="flex" style="visibility: hidden;justify-content: center;align-items: center;width: 400px;height: 300px;z-index: 2;position: absolute;top:50%;left: 50%;transform: translate(-50%, -50%)">
+    <img  style="width: 200px;height:150px;" src="assets/nailong.jpg" alt="nb" >
+    <button onclick="closeAlert()" style="position: absolute;top: 75px;left: 300px;border: black;background-color: transparent;font-size: larger">×</button>
   </div>
-  <div style="
-  background-color: antiquewhite;
-  text-align: center;
-  padding: 40px;
-  font-size: 12px;
-  ">
-     <p>我的网站</p>
-    <a href="https://www.bilibili.com/">友情链接</a>
   </div>
 </body>
 </html>
+
+
